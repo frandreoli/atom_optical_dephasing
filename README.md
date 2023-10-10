@@ -2,12 +2,11 @@
 Simulation of the time dynamics of an atomic spin-wave, either matched $|\mathbf k|=k_0$ or mismatched $|\mathbf k|\neq k_0$. An intrinsic dephasing phenomenon is expected, due to inter-atomic, optical interactions between the atoms [[1](Grava2022RenormalizationMedium)]. The time dynamics is computed via a first-order cumulant expansion (mean-field regime), which accounts for part of the atomic (quantum) nonlinearity. This is equivalent to an ansatz of locally separable quantum state, so that the initial spin wave can be written as
 
 $$
-\left|\psi (\mathbf k) \right\rangle= \displaystyle\bigotimes\_{j=1}^N\left[ \left(\sqrt{1-\dfrac{M}{N}}\right) \left|g_j \right\rangle + \left(\sqrt{\dfrac{M}{N}}\right) e^{i\mathbf k\cdot \mathbf r}\left|e_j \right\rangle  \right]
+\left|\psi (\mathbf k) \right\rangle= \displaystyle\bigotimes\_{j=1}^N\left[ \left(\sqrt{1-\dfrac{M}{N}}\right) \left|g_j \right\rangle + \left(\sqrt{\dfrac{M}{N}}\right) e^{i\mathbf k\cdot \mathbf r}\left|e_j \right\rangle  \right],
 $$
+where $N$ is the number of atoms, while $M$ is the average number of excitations (i.e. $M/N$ is the single-atom excitation probability). Here, we also defined $\left|g_j \right\rangle$ and $\left|e_j \right\rangle$ as respectively the ground and excited states of the $j$-th atom.
 
-
-
-In the limit of low atomic excitation, this is equivalent to the linear (classical) regime of coupled dipoles. For comparison with the (nonlinear) cumulant expansion, the code allows to compute the time evolution under this latter (linear) regime, via the option `option_non_linearity`.
+In the limit of low atomic excitations ($M/N\ll 1$), this analysis is equivalent to the linear (classical) regime of coupled dipoles. In case one wants to compare the cumulant expansion described above with the results of the linear approximation, the code allows to compute the time evolution under this latter (linear) regime as well, by changing the option `option_non_linearity` from `true` (nonlinear mean-field) to `false` (linear regime).
 
 
 # Code features
