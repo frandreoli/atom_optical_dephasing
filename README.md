@@ -17,7 +17,7 @@ The time dynamics exploits the package [OrdinaryDiffEq](https://docs.sciml.ai/Or
 
 where `nothing` stands for the automatic solver. The Jacobian of the time evolution can be either computed numerically or explicitly fed to the ODE solver.
 
-The simulation can be performed for different atomic densities and number of initial excitations. These different simulations can be performed either sequentially or in parallel, via the `@distributed` macro (see [Multi-processing and Distributed Computing](https://docs.julialang.org/en/v1/manual/distributed-computing/) in Julia). The user can choose between the two possibilities via the `option_distributed_main` option, depending on the hardware resources. 
+The simulation can be performed for different atomic densities and number of initial excitations. These different simulations can be performed either sequentially or in parallel, via the `@distributed` macro (see [Multi-processing and Distributed Computing](https://docs.julialang.org/en/v1/manual/distributed-computing/) in Julia). The user can choose between the two possibilities via the `option_distributed_main` option, depending on the hardware resources (the parallel computation requires the definition of [Shared Arrays](https://docs.julialang.org/en/v1/stdlib/SharedArrays/)).
 
 # References
 <a id="Grava2022RenormalizationMedium">[11]</a>
