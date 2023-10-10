@@ -15,7 +15,7 @@ The time dynamics exploits the package [OrdinaryDiffEq](https://docs.sciml.ai/Or
 
 ```(nothing, Tsit5(), RK4(), lsoda(), Vern8(), QNDF(), QNDF(autodiff=false), Vern9())```
 
-where `nothing` stands for the automatic solver. The Jacobian of the time evolution can be either computed numerically or explicitly fed to the ODE solver.
+where `nothing` stands for the automatic solver. The Jacobian of the time evolution can be either computed numerically or explicitly fed to the ODE solver, via the option `option_explicit_jac`.
 
 The simulation can be performed for different atomic densities and number of initial excitations. These different simulations can be performed either sequentially or in parallel, via the `@distributed` macro (see [Multi-processing and Distributed Computing](https://docs.julialang.org/en/v1/manual/distributed-computing/) in Julia). The user can choose between the two possibilities via the `option_distributed_main` option, depending on the hardware resources (the parallel computation requires the definition of [Shared Arrays](https://docs.julialang.org/en/v1/stdlib/SharedArrays/)).
 
