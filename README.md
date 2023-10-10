@@ -2,7 +2,7 @@
 Simulation of the time dynamics of an atomic spin-wave, either matched $|\mathbf k|=k_0$ or mismatched $|\mathbf k|\neq k_0$. An intrinsic dephasing phenomenon is expected, due to inter-atomic, optical interactions between the atoms [[1](Grava2022RenormalizationMedium)]. The time dynamics is computed via a first-order cumulant expansion (mean-field regime), which accounts for part of the atomic (quantum) nonlinearity. This is equivalent to an ansatz of locally separable quantum state, so that the initial spin wave can be written as
 
 $$
-\left|\psi (\mathbf k) \right\rangle= \displaystyle\times\_{j=1}^N\left[ \left(\sqrt{1-\dfrac{M}{N}}\right) \left|g_j \right\rangle= \right]
+\left|\psi (\mathbf k) \right\rangle= \displaystyle\bigotimes\_{j=1}^N\left[ \left(\sqrt{1-\dfrac{M}{N}}\right) \left|g_j \right\rangle= \right]
 $$
 
 
