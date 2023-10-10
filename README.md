@@ -20,7 +20,7 @@ where `nothing` stands for the automatic solver. The Jacobian of the time evolut
 The simulation can be performed for different atomic densities and number of initial excitations. These different simulations can be performed either sequentially or in parallel, via the `@distributed` macro (see [Multi-processing and Distributed Computing](https://docs.julialang.org/en/v1/manual/distributed-computing/) in Julia). The user can choose between the two possibilities via the `option_distributed_main` option, depending on the hardware resources (the parallel computation requires the definition of [Shared Arrays](https://docs.julialang.org/en/v1/stdlib/SharedArrays/)).
 
 # References
-<a id="Grava2022RenormalizationMedium">[11]</a>
+<a id="Grava2022RenormalizationMedium">[1]</a>
 Grava S., He Y., Wu S. and Chang D. E.,
 *Renormalization group analysis of near-field induced dephasing of optical spin waves in an atomic medium*,
 [New Journal of Physics 24, 013031](https://iopscience.iop.org/article/10.1088/1367-2630/ac465d) (2022)
