@@ -4,6 +4,7 @@ Simulation of the time dynamics of an atomic spin-wave, either matched $|\mathbf
 $$
 \left|\psi (\mathbf k) \right\rangle= \displaystyle\bigotimes\_{j=1}^N\left[ \left(\sqrt{1-\dfrac{M}{N}}\right) \left|g\_j \right\rangle + \left(\sqrt{\dfrac{M}{N}}\right) e^{i\mathbf k\cdot \mathbf{r} }\left|e\_j \right\rangle  \right],
 $$
+
 where $N$ is the number of atoms, while $M$ is the average number of excitations (i.e. $M/N$ is the single-atom excitation probability). Here, we also defined $\left|g\_j \right\rangle$ and $\left|e\_j \right\rangle$ as respectively the ground and excited states of the $j$-th atom.
 
 In the limit of low atomic excitations ($M/N\ll 1$), this analysis is equivalent to the linear (classical) regime of coupled dipoles. In case one wants to compare the cumulant expansion described above with the results of the linear approximation, the code allows to compute the time evolution under this latter (linear) regime as well, by changing the option `option_non_linearity` from `true` (nonlinear mean-field) to `false` (linear regime).
